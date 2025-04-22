@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/*------------------------------------------------
+
+MainVisual
+
+------------------------------------------------*/
+.mainvisual {
+    background-color: #ffed58;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    padding: 70px 0 160px;
+    margin-bottom: 40px;
+}
+.mainvisual .iiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainvisual .text .catchphrase {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.mainvisual .text .catchphrase span {
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.mainvisual .text .description {
+    font-weight: 500;
+    line-height: 1.6;
+}
+.mainvisual .img {
+    max-width: 560px;
+}
+/*------------------------------------------------
+
+スマートフォン用
+
+------------------------------------------------*/
+@media screen and (max-width: 767px) {
+/*------------------------------------------------
+
+MainVisual
+
+------------------------------------------------*/
+.mainvisual {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    padding: 50px 0 90px;
+}
+.mainvisual .inner {
+    flex-direction: column;
+}
+.mainvisual .text .catchphrase {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.mainvisual .text .description {
+    font-size: 14px;
+    margin-bottom: 30px;
+}    
+}

@@ -24,6 +24,12 @@ a:hover {
     opacity: 0.7;
 }
 
+.wrapper-1000 {
+    max-width: 1120px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 /*------------------------------------------------
 
 Header
@@ -60,6 +66,9 @@ Header
 ------------------------------------------------*/
 
 @media screen and (max-width: 767px) {
+    .pc {
+        display: none;
+    }
 
 main {
     padding-top: 60px;
@@ -128,6 +137,17 @@ Header
 }
 #header .hamburger span:nth-of-type(3) {
     top: 34px;
+}
+#header .hamburger .active span:nth-of-type(1) {
+    top:24px;
+    transform: rotate(-45deg);
+}
+#header .hamburger .active span:nth-of-type(2) {
+    opacity:0;
+}
+#header .hamburger .active span:nth-of-type(3) {
+    top: 24px;
+    transform: rotate(45deg);
 }
 
 }

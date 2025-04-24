@@ -57,5 +57,37 @@ MainVisual
 .mainvisual .text .description {
     font-size: 14px;
     margin-bottom: 30px;
+}
+/*------------------------------------------------
+
+Reason
+
+------------------------------------------------*/
+.reason {
+    margin-bottom: 80px;
+}
+.reason .item {
+    display: flex;
+    justify-content: space-between;
+}
+.reason .item li {
+    width: 30%;
+    max-width: 250px;
+    margin-right: 5%;
+}
+.reason .item li:last-child {
+    margin-right: 0;
+}
+.reason .item li .img{
+    margin-bottom: 20px;
+}
+.reason .item li .title {
+    border-radius: 50%;
+}
+.reason .item li .title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
 }    
 }

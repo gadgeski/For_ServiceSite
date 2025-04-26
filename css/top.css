@@ -11,7 +11,7 @@ MainVisual
     padding: 70px 0 160px;
     margin-bottom: 40px;
 }
-.mainvisual .iiner{
+.mainvisual .inner {
     display: flex;
     align-items: center;
     justify-content: space-between;

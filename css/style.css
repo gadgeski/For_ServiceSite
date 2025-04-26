@@ -4,11 +4,11 @@ html {
   font-size: 100%;
 }
 body {
-color: #000;
-font-family: 'Roboto', 'Noto Sans JP', sans-serif;
-font-weight: 400;
+    color: #000;
+    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+    font-weight: 400;
 }
-img{
+img {
     max-width: 100%;
     vertical-align: bottom;
 }
@@ -16,26 +16,25 @@ img{
 li {
     list-style: none;
 }
-a{
+a {
     color: #000;
     text-decoration: none;
 }
 a:hover {
     opacity: 0.7;
 }
+
 /* 横幅設定用 */
 .wrapper {
     max-width: 940px;
     padding: 0 20px;
     margin: 0 auto;
 }
-
 .wrapper-1000 {
     max-width: 1120px;
     padding: 0 20px;
     margin: 0 auto;
 }
-
 /* セクションタイトル用 */
 .section-title {
     font-size: 28px;
@@ -54,6 +53,28 @@ a:hover {
     bottom: -200px;
     left: 0;
     right: 0;
+}
+/* 下層ページヘッダー用 */
+.page-header {
+    background-color: #ffed58;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    padding: 60px 0 100px;
+    text-align: center;
+}
+.page-header .page-title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.page-header-text .text {
+    font-size: 14px;
+    line-height: 1.8;
+}
+/* マーカー */
+.highlight {
+    background: linear-gradient(transparent 50%, #fff390 50%);
+    font-weight: 700;
 }
 
 /*------------------------------------------------
@@ -87,11 +108,73 @@ Header
 }
 /*------------------------------------------------
 
+Contact
+
+------------------------------------------------*/
+.contact {
+    background-color: #ffed58;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    padding: 100px 0 60px;
+}
+.contact .inner {
+    text-align: center;
+}
+.contact .text {
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+.contact .btn {
+    background-color: #fff;
+    border: solid 1px #707070;
+    display: inline-block;
+    font-size: 14px;
+    padding: 20px 60px;
+}
+/*------------------------------------------------
+
+Footer
+
+------------------------------------------------*/
+#footer {
+    border-top: solid 1px #707070;
+    padding: 40px 0 20px;
+}
+#footer .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+#footer .logo {
+    max-width: 130px;
+}
+#footer .menu {
+    display: flex;
+    align-items: center;
+}
+#footer .menu li::after {
+    content: "";
+    width: 1px;
+    height: 16px;
+    background-color: #000;
+    transform: rotete(30deg);
+    position: absolute;
+    top: 3px;
+    right: -20px;
+}
+#footer .menu li:last-child::after {
+    content: none;
+}
+#footer .copyright {
+    font-size: 12px;
+    text-align: center;
+}
+/*------------------------------------------------
+
 スマートフォン用
 
 ------------------------------------------------*/
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px){
     .pc {
         display: none;
     }
@@ -99,6 +182,30 @@ Header
 main {
     padding-top: 60px;
 }
+
+/* セクションタイトル用 */
+.section-title {
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+.section-title::after {
+    width: 60px;
+}
+
+/* 下層ページヘッダー用 */
+.page-header {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    padding: 30px 0 50px;
+}
+.page-header .page-title .en {
+    font-size: 30px;
+}
+
+/* 下層ページヘッダー 下部テキスト用 */
+.page-head-text .title {
+    font-size: 20px;
+}
+
 /*------------------------------------------------
 
 Header
@@ -175,5 +282,39 @@ Header
     top: 24px;
     transform: rotate(45deg);
 }
+/*------------------------------------------------
 
+Contact
+
+------------------------------------------------*/
+.contact {
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    padding: 60px 0 40px;
+}
+/*------------------------------------------------
+
+Footer
+
+------------------------------------------------*/
+#footer .inner {
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+#footer .logo {
+    margin-bottom: 20px;
+}
+#footer .menu li {
+    margin-left: 30px;
+}
+#footer .menu li::after {
+    right: -15px;
+}
+#footer .menu li:first-child {
+    margin-left: 0;
+}
+}
+@media screen and (min-width: 768px) {
+    .sp {
+        display: none;
+    }
 }

@@ -74,7 +74,8 @@ Service
 .service {
     background-color: #ffed58;
     clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
-    padding: 120% 0;
+    padding: 120px 0;
+    /* 120% → 120px */
 }
 
 /*------------------------------------------------
@@ -105,10 +106,11 @@ Service Price
     height: 100%;
     object-fit: cover;
 }
-.sevice-price-item .text {
+.service-price-item .text {
     width: 50%;
     background-color: #fff;
     padding: 20px 30px;
+    /* .sevice-price-item .text → .service-price-item .text */
 }
 .service-price-item .text .section-title-l {
     margin-bottom: 20px;
@@ -158,7 +160,8 @@ Voice
 }
 .voice .item {
     display: flex;
-    align-items: ceter;
+    align-items: center;
+    /* ceter → center */
     justify-content: space-between;
     margin-bottom: 40px;
 }

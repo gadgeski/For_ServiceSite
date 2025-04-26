@@ -30,7 +30,8 @@ a:hover {
     padding: 0 20px;
     margin: 0 auto;
 }
-.wrapper-1000 {
+.wrapper-1080 {
+    /* .wrapper-1000 → .wrapper-1080 */
     max-width: 1120px;
     padding: 0 20px;
     margin: 0 auto;
@@ -50,7 +51,8 @@ a:hover {
     background-color: #000;
     margin: 0 auto;
     position: absolute;
-    bottom: -200px;
+    bottom: -20px;
+    /* -200px → -20px */
     left: 0;
     right: 0;
 }
@@ -78,12 +80,13 @@ a:hover {
     padding: 50px 0;
     text-align: center;
 }
-.page-header .page-title {
+.page-header .title {
     font-size: 22px;
     font-weight: 500;
     line-height: 1.8;
     margin-bottom: 30px;
 }
+/* .page-title → .title */
 .page-header-text .text {
     font-size: 14px;
     line-height: 1.8;
@@ -180,7 +183,8 @@ Footer
     width: 1px;
     height: 16px;
     background-color: #000;
-    transform: rotete(30deg);
+    transform: rotate(30deg);
+/* rotete → rotate修正 */
     position: absolute;
     top: 3px;
     right: -20px;
@@ -295,17 +299,19 @@ Header
 #header .hamburger span:nth-of-type(3) {
     top: 34px;
 }
-#header .hamburger .active span:nth-of-type(1) {
+#header .hamburger.active span:nth-of-type(1) {
     top: 24px;
     transform: rotate(-45deg);
 }
-#header .hamburger .active span:nth-of-type(2) {
+#header .hamburger.active span:nth-of-type(2) {
     opacity: 0;
 }
-#header .hamburger .active span:nth-of-type(3) {
+#header .hamburger.active span:nth-of-type(3) {
     top: 24px;
     transform: rotate(45deg);
 }
+/* .hamberger .active → .hamberger.active */
+
 /*------------------------------------------------
 
 Contact

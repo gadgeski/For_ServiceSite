@@ -110,16 +110,16 @@ Service Price
     background-color: #fff;
     padding: 20px 30px;
 }
-.service-price-item .text .section-title-1 {
+.service-price-item .text .section-title-l {
     margin-bottom: 20px;
 }
-.service-price-item .text .section-title-1 .en {
+.service-price-item .text .section-title-l .en {
     display: block;
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 0.1em;
 }
-.service-price-item .text .section-title-1 .ja {
+.service-price-item .text .section-title-l .ja {
     display: block;
     font-size: 12px;
     font-weight: 400;
@@ -153,9 +153,48 @@ Service Price
 Voice
 
 ------------------------------------------------*/
-
-
-
+.voice {
+    margin-bottom: 80px;
+}
+.voice .item {
+    display: flex;
+    align-items: ceter;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.voice .item .img {
+    max-width: 182px;
+    margin-right: 40px;
+}
+.voice .item .img:nth-child(2) {
+    margin-left: 40px;
+    margin-right: 0;
+}
+.voice .item .img img {
+    border: solid 1px #ddd;
+    border-radius: 50%;
+}
+.voice .item .text::after{
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-right: solid 1px #707070;
+    border-bottom: solid 1px #707070;
+    position: absolute;
+    top: 45%;
+}
+.voice .item .text:nth-child(1)::after {
+    transform: rotate(-45deg);
+    right: -10px;
+}
+.voice .item .text:nth-child(2)::after {
+    transform: rotate(135deg);
+    left: -10px;
+}
+.voice .item .text .age {
+    text-align: right;
+}
 /*------------------------------------------------
 
 スマートフォン用
@@ -182,7 +221,7 @@ MainVisual
     font-size: 14px;
     margin-bottom: 30px;
 }
-}
+
 /*------------------------------------------------
 
 Reason
@@ -243,8 +282,25 @@ Service Price
 .service-price-item .text {
     width: 100%;
 }
+
 /*------------------------------------------------
 
 Voice
 
 ------------------------------------------------*/
+.voice {
+    margin-bottom: 40px;
+}
+.voice .item .img {
+    width: 100px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+.voice .item .img:nth-child(2) {
+    margin-left: 20px;
+}
+.voice .item .text {
+    font-size: 14px;
+    padding: 10px;
+}
+}

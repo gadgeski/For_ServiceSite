@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>-Tasty&Restful Cafe-</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Tasty&Restful Cafe</div>
+        <ul>
+          <li><a href="#home">ホーム</a></li>
+          <li><a href="#about">カフェについて</a></li>
+          <li><a href="#menu">メニュー</a></li>
+          <li><a href="#gallery">ギャラリー</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1>最高のひとときを</h1>
+          <p>
+            こだわりのコーヒーと手作りスイーツで、あなたを癒しの空間へ誘います。
+          </p>
+          <button id="learnMoreBtn">もっと詳しく</button>
+        </div>
+      </section>
+
+      <section id="about" class="about-us">
+        <h2>カフェについて</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              当店は、厳選された豆を丁寧にハンドドリップで淹れることにこだわり、一杯一杯心を込めて提供しています。落ち着いた雰囲気の店内で、ゆったりとした時間をお過ごしください。
+            </p>
+            <p>
+              季節ごとに変わる手作りスイーツもおすすめです。ぜひ一度お試しください。
+            </p>
+          </div>
+          <div class="about-image"></div>
+        </div>
+      </section>
+
+      <section id="menu" class="menu-section">
+        <h2>メニュー</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <h3>スペシャルティコーヒー</h3>
+            <p>こだわりの豆を使用した、深みのある味わい。</p>
+            <span>¥500〜</span>
+          </div>
+          <div class="menu-item">
+            <h3>季節のタルト</h3>
+            <p>旬のフルーツを贅沢に使った手作りタルト。</p>
+            <span>¥650</span>
+          </div>
+          <div class="menu-item">
+            <h3>自家製サンドイッチ</h3>
+            <p>新鮮な野菜と自家製パンのヘルシーな一品。</p>
+            <span>¥780</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery-section">
+        <h2>ギャラリー</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/Cafe-Coffee2025.png" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/Tasty_HotTea2025_2.png" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/Cafe-Cake2025.png" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/Cafe-Sandwich2025.png" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2>お問い合わせ</h2>
+        <p>
+          ご予約やお問い合わせは、以下のフォームよりお気軽にご連絡ください。
+        </p>
+        <form class="contact-form">
+          <input type="text" placeholder="お名前" required />
+          <input type="email" placeholder="メールアドレス" required />
+          <textarea placeholder="メッセージ" rows="5"></textarea>
+          <button type="submit">送信</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Tasty&Restful Cafe. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
